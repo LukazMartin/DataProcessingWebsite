@@ -1,22 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website</title>
-    <link rel="stylesheet" href="styles1.css">
-</head>
-<body>
-    <h1>Add your CSV to create Visualizations</title>
-    <hr style="clear:both;">
-    <div id="main-page">
-        <div id="main-page-head">
-            <label for="csv-upload" class="btn-upload">Load CSV file</label>
-            <input id="csv-upload" type="file" accept=".csv, text/comma-separated-values, text/plain"/>
-            <br>
-            <a  id="csv-example" class="btn-upload"  style="text-decoration: none" href=visualizations.html>Load example</a>
+<html>
+    <head>
+        <title>Website</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+    </head>
+    <body>
+        <header>
+            <img src="imgs/datascience_logo.png" class="logo"
+            width="170" 
+            height="100"><img>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">CV</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <section>
+            <h1 id="name">Lukaz Martin Doehne</h1>
+            <h1></h1>
+            <h2 id="subtitle">Hello! Glad to see you here. This is a collection of my personal projects made during free time.</h2>
+            <a href="#sec" id="btn">Explore</a>
+        </section>
+        <div class="sec" id="sec">
+            <img src="imgs/profile.png" style="float: left; margin-right: 15px;"></img>
+            <h2>About Me</h2>
+            <p> I am a SW Engineer with a great passion for Data Science! <br><br>
+                
+                I studied in Barcelona, Spain a Bachelor's and a Master's degree in CS. Followed by a Master's degree in Data Science<br><br>
+
+                I have experience in developing software applications and analyzing data to drive business outcomes.<br><br>
+                
+                Having lived in Spain, Germany and Switzerland. allowed me to speak Spanish, German and English.<br><br>
+            </p>
         </div>
-    </div>
-</body>
+        <footer class="footer_area section_gap" id="contact">
+            
+            <h4 id="contact-me">Contact Me</h4>
+
+            <ul class="list" id="list">
+                <li>
+                    <a href="https://www.linkedin.com/in/lukaz-martin-doehne/"><i class="fa fa-linkedin-square" style="font-size:24px" ></i></a>
+                </li>
+                <li>
+                  <a href="https://github.com/LukazMartin"><i class="fa fa-github" style="font-size:36px"></i></a>
+                </li>
+              </ul>
+          </footer>
+    </body>
 </html>

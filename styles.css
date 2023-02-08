@@ -11,7 +11,7 @@ body
 {
     min-height: 100vh;
     overflow-x: hidden;
-    background: linear-gradient(#2b1055,#7597de);
+    background: linear-gradient(#ffffff,#738fcb);
 }
 header
 {
@@ -27,7 +27,7 @@ header
 }
 header .logo
 {
-    color:#fff;
+    color:#000000;
     font-weight: 700;
     text-decoration: none;
     font-size: 2em;
@@ -49,14 +49,15 @@ header ul li a
 {
     text-decoration: none;
     padding: 6px 15px;
-    color:#fff;
+    color:#000000;
     border-radius:20px;
+    border: 1px solid transparent;
 }
 header ul li a:hover,
 header ul li a.active
 {
     background: #fff;
-    color:#2b1055;
+    border: 1px solid rgb(0, 0, 0);
 }
 section
 {
@@ -76,35 +77,20 @@ section::before
     bottom: 0;
     width: 100%;
     height: 100px;
-    background: linear-gradient(to top, #1c0522,transparent);
+    background: linear-gradient(to top, #051322,transparent);
     z-index: 1000;
 }
-section img
+#name
 {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    pointer-events: none;
+    font-size: 3.5vw;
+    top: 100px;
 }
-section img#moon
-{
-    mix-blend-mode: screen;
-}
-section img#mountains_front
-{
-    z-index:10;
-}
-#text
+#subtitle
 {
     position: absolute;
-    color: #fff;
-    right: -350px;
-    white-space: nowrap;
-    font-size: 7.5vw;
-    z-index: 9;
+    font-size: 1.5vw;
+    top: 200px;
 }
 #btn
 {
@@ -113,7 +99,7 @@ section img#mountains_front
     padding: 8px 30px;
     border-radius: 40px;
     background: #fff;
-    color: #2b1055;
+    color: #000000;
     font-size: 1.5em;    
     z-index: 9;
     transform: translateY(100px);
@@ -122,7 +108,7 @@ section img#mountains_front
 {
     position:relative;
     padding: 100px;
-    background: #1c0522;
+    background: #051322;
 }
 .sec h2
 {
@@ -134,4 +120,45 @@ section img#mountains_front
 {
     font-size: 1em;
     color:#fff
+}
+footer
+{
+    background-color: #000;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#contact-me
+{
+    font-size: 1em;
+    color:#fff
+}
+
+#list
+{
+    margin-top: 200px;
+    margin-left: -100px;
+}
+footer ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+footer ul li {
+    float: left;
+}
+
+footer ul li a {
+display: block;
+color: white;
+text-align: center;
+padding: 16px;
+text-decoration: none;
 }
